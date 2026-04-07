@@ -1,472 +1,1125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>NATE WEB</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
-        img:hover {
-          animation: shake 0.5s;
-          animation-iteration-count: infinite;
-        }
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hongce (Nate) Chen — Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer based in Toronto. Vue, Node, TypeScript, AI integration. Currently expanding into AI application development and security engineering.">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-        @keyframes shake {
-          0% { transform: translate(1px, 1px) rotate(0deg); }
-          10% { transform: translate(-1px, -2px) rotate(-1deg); }
-          20% { transform: translate(-3px, 0px) rotate(1deg); }
-          30% { transform: translate(3px, 2px) rotate(0deg); }
-          40% { transform: translate(1px, -1px) rotate(1deg); }
-          50% { transform: translate(-1px, 2px) rotate(-1deg); }
-          60% { transform: translate(-3px, 1px) rotate(0deg); }
-          70% { transform: translate(3px, 1px) rotate(-1deg); }
-          80% { transform: translate(-1px, -1px) rotate(1deg); }
-          90% { transform: translate(1px, 2px) rotate(0deg); }
-          100% { transform: translate(1px, -2px) rotate(-1deg); }
-        }
-        </style>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">NATEEE</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Treasure">Treasure</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/picture.JPG" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Hongce Chen</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="lead font-weight-light mb-0">- Student -</p>
-            </div>
-        </header>
-        <!-- Treasure Section-->
-        <section class="page-section Treasure" id="Treasure">
-            <div class="container">
-                <!-- Treasure Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Treasure</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Treasure Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Treasure Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="Treasure-item mx-auto" data-bs-toggle="modal" data-bs-target="#TreasureModal1">
-                            <div class="Treasure-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="Treasure-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Treasure/cabin.png" alt="..." />
-                        </div>
-                        <div class="intro font-weight-light text-center text-uppercase text-secondary mb-0">Introduction</div>
-                    </div>
-                    <!-- Treasure Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="Treasure-item mx-auto" data-bs-toggle="modal" data-bs-target="#TreasureModal2">
-                            <div class="Treasure-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="Treasure-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Treasure/cake.png" alt="..." />
-                        </div>
-                        <div class="intro font-weight-light text-center text-uppercase text-secondary mb-0">Education</div>
-                    </div>
-                    <!-- Treasure Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="Treasure-item mx-auto" data-bs-toggle="modal" data-bs-target="#TreasureModal3">
-                            <div class="Treasure-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="Treasure-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Treasure/circus.png" alt="..." />
-                        </div>
-                        <div class="intro font-weight-light text-center text-uppercase text-secondary mb-0">work experience</div>
-                    </div>
-                    <!-- Treasure Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="Treasure-item mx-auto" data-bs-toggle="modal" data-bs-target="#TreasureModal4">
-                            <div class="Treasure-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="Treasure-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Treasure/game.png" alt="..." />
-                        </div>
-                        <div class="intro font-weight-light text-center text-uppercase text-secondary mb-0">skill</div>
-                    </div>
-                    <!-- Treasure Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="Treasure-item mx-auto" data-bs-toggle="modal" data-bs-target="#TreasureModal5">
-                            <div class="Treasure-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="Treasure-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Treasure/safe.png" alt="..." />
-                        </div>
-                        <div class="intro font-weight-light text-center text-uppercase text-secondary mb-0">location</div>
-                    </div>
-                    <!-- Treasure Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="Treasure-item mx-auto" data-bs-toggle="modal" data-bs-target="#TreasureModal6">
-                            <div class="Treasure-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="Treasure-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Treasure/submarine.png" alt="..." />
-                        </div>
-                        <div class="intro font-weight-light text-center text-uppercase text-secondary mb-0">hobby</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Do you want know more about me?</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">There is my resume down here. Check it if you want.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="assets/resume.pdf">
-                        <i class="fas fa-download me-2"></i>
-                        Get Resume Here!
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <form action="https://formsubmit.co/hongcechen@gmail.com" method="POST" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Know more About Me</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/natechch1"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/hongce-chen-726114212/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/playlist?list=PLvHm5CfOwZCh-BxUJ8Qmic49b-vWUpN0x"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Nate Website 2021</small></div>
+<!-- Fonts: JetBrains Mono (terminal) + Space Grotesk avoided per skill guidance — using Fraunces (display) instead -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,900&display=swap" rel="stylesheet">
+
+<!-- Matter.js physics engine -->
+<script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+
+<style>
+/* ============ DESIGN TOKENS ============ */
+:root {
+  --bg: #0a0a0a;
+  --bg-elev: #141414;
+  --ink: #f5f5f0;
+  --ink-dim: #888880;
+  --ink-faint: #3a3a36;
+  --accent: #c6ff00;          /* sharp lime — the only color */
+  --accent-dim: #6a8800;
+  --warn: #ff5722;
+  --grid: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --display: 'Fraunces', Georgia, serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle grid background everywhere */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Film grain overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: overlay;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--ink); }
+
+/* ============ TOP BAR ============ */
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.topbar-left { display: flex; align-items: center; gap: 16px; }
+.topbar-left .dot {
+  width: 8px; height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--accent);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+.topbar-right { display: flex; gap: 24px; }
+.topbar-right a {
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+.topbar-right a:hover { color: var(--accent); }
+
+/* ============ HERO / PHYSICS SANDBOX ============ */
+.hero {
+  position: relative;
+  width: 100%;
+  padding: 96px 48px 48px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.hero-headline {
+  max-width: 900px;
+}
+.hero-headline .label {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-headline .label::before {
+  content: '>';
+  color: var(--ink-dim);
+}
+.hero-headline h1 {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(44px, 7vw, 100px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.hero-headline h1 .accent {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 300;
+}
+.hero-headline .sub {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--ink-dim);
+  max-width: 560px;
+  line-height: 1.6;
+}
+.hero-headline .sub strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ----- The sandbox: a clearly bounded playground ----- */
+.sandbox {
+  position: relative;
+  width: 100%;
+}
+
+/* Bar that sits ABOVE the sandbox — no longer overlapping cards */
+.sandbox-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  background: var(--bg-elev);
+}
+.sandbox-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  flex: 1;
+}
+.sandbox-bar-left .pill {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 4px 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+}
+.sandbox-bar-left .hint-text {
+  color: var(--ink-dim);
+}
+.sandbox-bar-left .hint-text strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+.sandbox-bar-right {
+  display: flex;
+  align-items: stretch;
+}
+.sandbox-bar-right button {
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border);
+  color: var(--ink);
+  padding: 0 22px;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.sandbox-bar-right button:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* The actual physics canvas container */
+.sandbox-canvas-wrap {
+  position: relative;
+  width: 100%;
+  height: 56vh;
+  min-height: 420px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(ellipse at center, rgba(198,255,0,0.025), transparent 70%),
+    var(--bg);
+  overflow: hidden;
+}
+
+/* Decorative corner brackets — make the sandbox feel intentional */
+.sandbox-canvas-wrap::before,
+.sandbox-canvas-wrap::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--accent);
+  pointer-events: none;
+  z-index: 3;
+}
+.sandbox-canvas-wrap::before {
+  top: 8px; left: 8px;
+  border-right: none;
+  border-bottom: none;
+}
+.sandbox-canvas-wrap::after {
+  bottom: 8px; right: 8px;
+  border-left: none;
+  border-top: none;
+}
+
+#physics-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.scroll-cue {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+  align-self: flex-end;
+}
+.scroll-cue .arrow {
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid var(--ink-dim);
+  border-bottom: 1px solid var(--ink-dim);
+  transform: rotate(45deg);
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: rotate(45deg) translate(0,0); }
+  50% { transform: rotate(45deg) translate(2px, 2px); }
+}
+
+/* ============ SECTION FRAMEWORK ============ */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 120px 48px;
+  border-top: 1px solid var(--border);
+}
+.section-head {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+  align-items: baseline;
+}
+.section-head .num {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+.section-head h2 {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.section-head h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+.section-body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+}
+.section-body .meta {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+  line-height: 2;
+}
+.section-body .content {
+  max-width: 860px;
+}
+
+/* ============ ABOUT ============ */
+.about-text {
+  font-family: var(--display);
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.45;
+  font-weight: 300;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+.about-text strong {
+  font-weight: 600;
+  color: var(--accent);
+  font-style: italic;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+}
+.about-grid > div {
+  font-size: 12px;
+}
+.about-grid .k {
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.about-grid .v {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+/* ============ EXPERIENCE ============ */
+.exp {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+}
+.exp:last-child { border-bottom: 1px solid var(--border); }
+.exp-meta {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+}
+.exp-meta .role {
+  color: var(--ink);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.exp-meta .company {
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.exp-content h3 {
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.exp-content .stack {
+  font-size: 11px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+.exp-content ul {
+  list-style: none;
+}
+.exp-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.exp-content li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.exp-content li strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ============ PROJECTS ============ */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 0;
+}
+.project {
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(.2,.9,.3,1.2), border-color 0.3s;
+  cursor: default;
+}
+.project:hover {
+  transform: translate(-4px, -4px);
+  border-color: var(--accent);
+  box-shadow: 4px 4px 0 var(--accent);
+}
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at top right, rgba(198,255,0,0.08), transparent 70%);
+  pointer-events: none;
+}
+.project .num {
+  font-size: 11px;
+  color: var(--ink-dim);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.project h4 {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.project .tag {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+  padding: 2px 8px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.project p {
+  font-size: 13px;
+  color: var(--ink-dim);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.project p strong { color: var(--ink); font-weight: 500; }
+.project .stack {
+  font-size: 10px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.project .stack span {
+  padding: 3px 8px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+}
+
+/* ============ SKILLS GRID ============ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.skill-cell {
+  background: var(--bg);
+  padding: 24px 20px;
+  transition: background 0.2s;
+}
+.skill-cell:hover { background: var(--bg-elev); }
+.skill-cell .k {
+  font-size: 10px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+.skill-cell .v {
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.skill-cell .v .accent { color: var(--accent); }
+
+/* ============ CONTACT ============ */
+.contact {
+  text-align: left;
+}
+.contact h2 {
+  font-family: var(--display);
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+.contact h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 720px;
+  margin-top: 48px;
+}
+.contact-card {
+  border: 1px solid var(--border);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.2s;
+}
+.contact-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-elev);
+  transform: translateY(-2px);
+}
+.contact-card .k {
+  font-size: 10px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.contact-card .v {
+  font-size: 16px;
+  color: var(--ink);
+  font-family: var(--mono);
+  word-break: break-all;
+}
+.contact-card:hover .v { color: var(--accent); }
+
+/* ============ FOOTER ============ */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 48px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+footer .blink {
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background: var(--accent);
+  margin-left: 6px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .topbar { padding: 0 16px; }
+  .topbar-right { gap: 16px; }
+  .topbar-right a:not(:last-child) { display: none; }
+  section { padding: 80px 24px; }
+  .hero { padding: 80px 20px 32px; gap: 28px; }
+  .sandbox-canvas-wrap { height: 50vh; min-height: 360px; }
+  .sandbox-bar { flex-direction: column; align-items: stretch; }
+  .sandbox-bar-left { padding: 12px 14px; flex-wrap: wrap; gap: 10px; }
+  .sandbox-bar-left .hint-text { font-size: 10px; }
+  .sandbox-bar-right { border-top: 1px solid var(--border); }
+  .sandbox-bar-right button { width: 100%; padding: 12px; border-left: none; }
+  .section-head, .section-body { grid-template-columns: 1fr; gap: 24px; }
+  .section-head .num { font-size: 10px; }
+  .exp { grid-template-columns: 1fr; gap: 16px; }
+  .projects, .contact-grid, .about-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="dot"></span>
+    <span>Hongce&nbsp;Chen&nbsp;/&nbsp;Toronto,&nbsp;ON</span>
+  </div>
+  <nav class="topbar-right">
+    <a href="#about">About</a>
+    <a href="#experience">Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ HERO + PHYSICS SANDBOX ============ -->
+<section class="hero">
+  <div class="hero-headline">
+    <div class="label">Full-Stack Developer · est. 2023</div>
+    <h1>I build things that <span class="accent">work</span><br>and things that <span class="accent">play</span>.</h1>
+    <p class="sub"><strong>Hongce (Nate) Chen.</strong> Toronto-based engineer with 2.5+ years shipping production Vue / Node / TypeScript at an award-winning marketing agency. Currently expanding into AI application development &amp; security engineering at Ontario Tech (MITS-AI, Sept 2026).</p>
+  </div>
+
+  <div class="sandbox">
+    <div class="sandbox-bar">
+      <div class="sandbox-bar-left">
+        <span class="pill">DRAG</span>
+        <span class="hint-text"><strong>Grab</strong> the floating cards. Throw them around. They're me, in pieces.</span>
+      </div>
+      <div class="sandbox-bar-right">
+        <button id="reset-btn">↻ Reset</button>
+      </div>
+    </div>
+    <div class="sandbox-canvas-wrap">
+      <canvas id="physics-canvas"></canvas>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll for more</span>
+    <span class="arrow"></span>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="section-head">
+    <div class="num">[ 01 / About ]</div>
+    <h2>A developer who likes things that <em>actually ship</em>.</h2>
+  </div>
+  <div class="section-body">
+    <div class="meta">
+      Based in<br>Toronto, ON<br><br>
+      Currently<br>Building &amp; learning<br><br>
+      Status<br><span style="color:var(--accent)">Open to work</span>
+    </div>
+    <div class="content">
+      <p class="about-text">
+        I started as a front-end developer in 2023 and grew into <strong>full-stack ownership</strong> of a production internal platform used by 50+ teammates &mdash; the kind of work where every decision has a user attached to it.
+      </p>
+      <p class="about-text">
+        Now I'm pulling on a new thread: <strong>AI application development</strong>, integrating LLMs into real products, and the security side of all the systems we're handing the future to. Starting September 2026 I'll be doing it formally at Ontario Tech (MITS &mdash; AI specialization).
+      </p>
+      <div class="about-grid">
+        <div>
+          <div class="k">Education</div>
+          <div class="v">B.Sc. Computer Science<br>York University, 2023</div>
         </div>
-        <!-- Treasure Modals-->
-        <!-- Treasure Modal 1-->
-        <div class="Treasure-modal modal fade" id="TreasureModal1" tabindex="-1" aria-labelledby="TreasureModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Treasure Modal - Title-->
-                                    <h2 class="Treasure-modal-title text-secondary text-uppercase mb-0">Introduction</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Treasure Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/Treasure/cabin.png" alt="..." />
-                                    <!-- Treasure Modal - Text-->
-                                    <p class=" text-secondary mb-4">My Chinese name is Hongce Chen and you can also call me Nate. I’m a student at York University. I'm 4th year student and my cumulative GPA is 6.97. I’m eager to learn new things and I have learned to code in Spring (and other framework), Python and Flask outside the classroom. I'm interest in ML/DL and did some DL replication test. I’m also goal-oriented and self-disciplined. </p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+          <div class="k">Incoming</div>
+          <div class="v">M.Sc. IT Security &mdash; AI<br>Ontario Tech, Sept 2026</div>
         </div>
-        <!-- Treasure Modal 2-->
-        <div class="Treasure-modal modal fade" id="TreasureModal2" tabindex="-1" aria-labelledby="TreasureModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Treasure Modal - Title-->
-                                    <h2 class="Treasure-modal-title text-secondary text-uppercase mb-0">Education</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Treasure Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/Treasure/cake.png" alt="..." />
-                                    <!-- Treasure Modal - Text-->
-                                    <p class=" text-secondary mb-4">Institution: York University<br>
-                                    Degree: Bachelor<br>
-                                    Major: Computer Science<br>
-                                    Current Progress: Fourth-year<br>
-                                    Current GPA: 6.97</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+          <div class="k">Languages</div>
+          <div class="v">English / 中文</div>
         </div>
-        <!-- Treasure Modal 3-->
-        <div class="Treasure-modal modal fade" id="TreasureModal3" tabindex="-1" aria-labelledby="TreasureModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Treasure Modal - Title-->
-                                    <h2 class="Treasure-modal-title text-secondary text-uppercase mb-0">work experience</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Treasure Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/Treasure/circus.png" alt="..." />
-                                    <!-- Treasure Modal - Text-->
-                                    <p class=" text-secondary mb-4">The first project in my resume is about AI development. In the last term, I did this project with Professor Song Wang. My task is to test the repeatability and reliability of ML/DL models for SE tasks (e.g., automatic comment generation). Testing replications of code provided by other researchers interested me in ML and DL. I uploaded my project report.
-I'm currently coding web software which is about user center. This project is the second project on my resume. It's a self-project. For the frontend part, I used React and Ant Design Pro. I used SpringMVC, SpringBoot, MyBatis Plus, and MySQL for the backend.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+          <div class="k">Looking for</div>
+          <div class="v">Full-stack · Front-end · AI engineering · GTA</div>
         </div>
-        <!-- Treasure Modal 4-->
-        <div class="Treasure-modal modal fade" id="TreasureModal4" tabindex="-1" aria-labelledby="TreasureModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Treasure Modal - Title-->
-                                    <h2 class="Treasure-modal-title text-secondary text-uppercase mb-0">skill</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Treasure Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/Treasure/game.png" alt="..." />
-                                    <!-- Treasure Modal - Text-->
-                                    <p class=" text-secondary mb-4">•	Knowledge of Java, C, Python, UNIX shell scripts, JavaScript, HTML, CSS, Flask, MySQL and had experience developing simple Android apps with Java.<br>
-                                        •	Familiarity with SE Framwork like Spring, Springboot, MyBatis, Mysql.<br>
-                                        •	Familiarity with ML/DL models and tools<br>
-                                        •	Familiarity with Linux operating systems<br>
-                                        •	Familiarity with Acitve Directory, Windows server and TCP/IP.<br> 
-                                        •	Familiarity with data structures and algorithm.<br>
-                                        •	Demonstrates excellent teamwork, with strong communication skills.
-                                        </p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="section-head">
+    <div class="num">[ 02 / Work ]</div>
+    <h2>2.5 years of <em>shipping things</em>.</h2>
+  </div>
+  <div class="section-body">
+    <div class="meta">
+      Aug 2023<br>→ Jan 2026<br><br>
+      Company<br>Reshift Media<br><br>
+      Clients<br>200+ in 22 countries
+    </div>
+    <div class="content">
+      <div class="exp">
+        <div class="exp-meta">
+          <div class="role">Front-End Developer</div>
+          <div class="company">Reshift Media Inc.</div>
+          <div>Toronto, ON</div>
+          <div>Aug 2023 — Jan 2026</div>
         </div>
-        <!-- Treasure Modal 5-->
-        <div class="Treasure-modal modal fade" id="TreasureModal5" tabindex="-1" aria-labelledby="TreasureModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Treasure Modal - Title-->
-                                    <h2 class="Treasure-modal-title text-secondary text-uppercase mb-0">Location</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Treasure Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/Treasure/safe.png" alt="..." />
-                                    <!-- Treasure Modal - Text-->
-                                    <p class=" text-secondary mb-4">- Currently in Toronto, Ontario, Canada.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="exp-content">
+          <h3>Frandash &mdash; Internal admin portal</h3>
+          <div class="stack">Vue.js · Node.js / TypeScript · MongoDB · REST</div>
+          <ul>
+            <li>Led <strong>end-to-end development</strong> from concept to production. Currently used by <strong>50+ team members</strong> across multiple departments.</li>
+            <li>Built a CSV processing module that scans user-information files and ingests them into MongoDB &mdash; <strong>~50% reduction</strong> in manual data prep.</li>
+            <li>Built a revenue analytics tool that queries internal APIs &amp; the database to generate company revenue breakdowns over arbitrary time ranges.</li>
+            <li>Designed scalable schemas, robust REST APIs, and a secure media-asset manager integrated with cloud storage. <strong>Saved each user an estimated 6&ndash;8 hours per week.</strong></li>
+          </ul>
         </div>
-        <!-- Treasure Modal 6-->
-        <div class="Treasure-modal modal fade" id="TreasureModal6" tabindex="-1" aria-labelledby="TreasureModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Treasure Modal - Title-->
-                                    <h2 class="Treasure-modal-title text-secondary text-uppercase mb-0">Hobby</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Treasure Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/Treasure/submarine.png" alt="..." />
-                                    <!-- Treasure Modal - Text-->
-                                    <p class=" text-secondary mb-4">I have always been very interested in tech and really love learning to code on my own time. I have spend a lot of my time working on personal projects like this site for example. When I am not working on my projects, I like to go running, play basketball, and play some computer games.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <div class="exp">
+        <div class="exp-meta">
+          <div class="role">Front-End Developer</div>
+          <div class="company">Reshift Media Inc.</div>
+          <div>AI features &amp; ad-tech UI</div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <div class="exp-content">
+          <h3>AI-Powered Social Content Tool</h3>
+          <div class="stack">Vue.js · Vuetify · PHP · ChatGPT API</div>
+          <ul>
+            <li>Built AI-driven features for Reshift's social media management product, integrating the <strong>ChatGPT API</strong> to optimize Facebook and Instagram posts for client campaigns.</li>
+            <li>Implemented tone adjustment, hashtag suggestion, and paragraph-to-bullet conversion. Shipped to production.</li>
+          </ul>
+
+          <h3 style="margin-top: 32px">Performance Max Ad Platform</h3>
+          <div class="stack">Vue.js · Vuetify · REST APIs</div>
+          <ul>
+            <li>Built a modular front end for a multi-channel ad management platform serving <strong>30+ franchise marketing clients</strong>, managing Google Ads assets across YouTube, Display, Search, and Gmail.</li>
+            <li>Optimized performance via lazy loading and code splitting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="section-head">
+    <div class="num">[ 03 / Projects ]</div>
+    <h2>Things I built <em>for myself</em>.</h2>
+  </div>
+  <div class="section-body">
+    <div class="meta">
+      Personal<br>experiments<br><br>
+      Theme<br>AI · Agents<br>· Reproducibility
+    </div>
+    <div class="content">
+      <div class="projects">
+        <article class="project">
+          <div class="num">→ 001</div>
+          <h4>Blackjack AI Agent</h4>
+          <span class="tag">LLM · Agent</span>
+          <p>An agent that makes optimal blackjack decisions via probabilistic models, then hands the session to <strong>DeepSeek-R1</strong> for natural-language post-game analysis &mdash; strategy critique &amp; performance scoring.</p>
+          <div class="stack">
+            <span>Vue.js</span><span>Node.js</span><span>DeepSeek-R1</span><span>LLM</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="num">→ 002</div>
+          <h4>CodeBERT Reproducibility</h4>
+          <span class="tag">Research · ML</span>
+          <p>Reproduced code-summarization research using <strong>CodeBERT on CodeXGLUE</strong> across multiple languages. Resolved Torch version conflicts and adapted the training pipeline to Colab GPU constraints. Verified that increased epochs improve performance, confirming the original study.</p>
+          <div class="stack">
+            <span>PyTorch</span><span>Transformers</span><span>Colab</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="section-head">
+    <div class="num">[ 04 / Stack ]</div>
+    <h2>Tools I reach for <em>without thinking</em>.</h2>
+  </div>
+  <div class="section-body">
+    <div class="meta">
+      Production<br>experience<br><br>
+      &nbsp;<br><br>
+      Currently<br>learning
+    </div>
+    <div class="content">
+      <div class="skills-grid">
+        <div class="skill-cell"><div class="k">Languages</div><div class="v">TypeScript · JavaScript · Python · SQL · PHP</div></div>
+        <div class="skill-cell"><div class="k">Frontend</div><div class="v">Vue.js · Vuetify · HTML · CSS</div></div>
+        <div class="skill-cell"><div class="k">Backend</div><div class="v">Node.js · Express · REST APIs · Cron</div></div>
+        <div class="skill-cell"><div class="k">Databases</div><div class="v">MongoDB · Schema design</div></div>
+        <div class="skill-cell"><div class="k">AI / ML</div><div class="v">PyTorch · Transformers · ChatGPT API · DeepSeek-R1</div></div>
+        <div class="skill-cell"><div class="k">Tools</div><div class="v">Git · GitHub · Colab · Agile</div></div>
+        <div class="skill-cell"><div class="k">Learning</div><div class="v"><span class="accent">React · Next.js · LangChain</span></div></div>
+        <div class="skill-cell"><div class="k">Learning</div><div class="v"><span class="accent">Docker · AWS · Vector DBs</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="section-head">
+    <div class="num">[ 05 / Contact ]</div>
+    <h2>Let's <em>talk</em>.</h2>
+  </div>
+  <div class="section-body">
+    <div class="meta">
+      Status<br><span style="color:var(--accent)">●</span> Open to work<br><br>
+      Response<br>Within 24h
+    </div>
+    <div class="content">
+      <p style="font-family: var(--display); font-size: 22px; font-weight: 300; color: var(--ink-dim); max-width: 640px; line-height: 1.5;">
+        Looking for an engineer who actually ships? Or just want to chat about LLM agents, security, or what to build next?
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:hongcechen@gmail.com">
+          <div class="k">Email</div>
+          <div class="v">hongcechen@gmail.com</div>
+        </a>
+        <a class="contact-card" href="https://github.com/natechch1" target="_blank" rel="noopener">
+          <div class="k">GitHub</div>
+          <div class="v">github.com/natechch1</div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/hongce-chen-726114212/" target="_blank" rel="noopener">
+          <div class="k">LinkedIn</div>
+          <div class="v">/in/hongce-chen</div>
+        </a>
+        <a class="contact-card" href="tel:+14379715766">
+          <div class="k">Phone</div>
+          <div class="v">+1 437-971-5766</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Hongce Chen — Built from scratch in Toronto<span class="blink"></span></div>
+  <div>v2.0 / Last updated April 2026</div>
+</footer>
+
+<!-- ============ PHYSICS SANDBOX SCRIPT ============ -->
+<script>
+(function() {
+  // ===== Matter.js setup =====
+  const { Engine, Render, Runner, Bodies, Body, Composite, Mouse, MouseConstraint, Events } = Matter;
+
+  const canvas = document.getElementById('physics-canvas');
+  const heroEl = document.querySelector('.sandbox-canvas-wrap');
+  let width = heroEl.clientWidth;
+  let height = heroEl.clientHeight;
+
+  const engine = Engine.create({
+    gravity: { x: 0, y: 1, scale: 0.0008 } // gentle gravity — feels floaty
+  });
+
+  const render = Render.create({
+    canvas: canvas,
+    engine: engine,
+    options: {
+      width: width,
+      height: height,
+      wireframes: false,
+      background: 'transparent',
+      pixelRatio: window.devicePixelRatio || 1
+    }
+  });
+
+  // ===== Walls (invisible, keep bodies inside hero) =====
+  const wallThickness = 200;
+  const wallOpts = { isStatic: true, render: { visible: false } };
+  let walls = [
+    Bodies.rectangle(width/2, height + wallThickness/2, width*2, wallThickness, wallOpts), // floor
+    Bodies.rectangle(-wallThickness/2, height/2, wallThickness, height*2, wallOpts),       // left
+    Bodies.rectangle(width + wallThickness/2, height/2, wallThickness, height*2, wallOpts),// right
+    Bodies.rectangle(width/2, -wallThickness/2, width*2, wallThickness, wallOpts)          // ceiling
+  ];
+  Composite.add(engine.world, walls);
+
+  // ===== The floating cards (skills, tools, projects) =====
+  // Each card is a rectangle with custom rendering via afterRender hook
+  const cardData = [
+    { label: 'Vue.js',         w: 130, h: 56, type: 'skill' },
+    { label: 'Node.js',        w: 140, h: 56, type: 'skill' },
+    { label: 'TypeScript',     w: 160, h: 56, type: 'skill' },
+    { label: 'MongoDB',        w: 145, h: 56, type: 'skill' },
+    { label: 'Python',         w: 125, h: 56, type: 'skill' },
+    { label: 'PyTorch',        w: 130, h: 56, type: 'skill' },
+    { label: 'ChatGPT API',    w: 165, h: 56, type: 'highlight' },
+    { label: 'DeepSeek-R1',    w: 165, h: 56, type: 'highlight' },
+    { label: 'CodeBERT',       w: 140, h: 56, type: 'skill' },
+    { label: 'Frandash',       w: 145, h: 64, type: 'project' },
+    { label: 'Blackjack Agent',w: 185, h: 64, type: 'project' },
+    { label: '50+ users',      w: 130, h: 50, type: 'stat' },
+    { label: '6–8 hrs / week', w: 160, h: 50, type: 'stat' },
+    { label: '2.5 yrs shipped',w: 165, h: 50, type: 'stat' },
+    { label: 'Toronto, ON',    w: 145, h: 50, type: 'stat' },
+  ];
+
+  const bodies = [];
+  function spawnCards() {
+    cardData.forEach((c, i) => {
+      const x = 100 + (i * 90) % (width - 200);
+      const y = 60 + Math.random() * 80;
+      const body = Bodies.rectangle(x, y, c.w, c.h, {
+        chamfer: { radius: 4 },
+        restitution: 0.55,
+        friction: 0.02,
+        frictionAir: 0.012,
+        density: 0.0018,
+        render: { fillStyle: 'transparent', strokeStyle: 'transparent' }
+      });
+      body.cardData = c;
+      bodies.push(body);
+    });
+    Composite.add(engine.world, bodies);
+  }
+  spawnCards();
+
+  // ===== Mouse interaction (drag & throw) =====
+  const mouse = Mouse.create(render.canvas);
+  // Allow scroll over canvas (don't capture wheel)
+  mouse.element.removeEventListener('mousewheel', mouse.mousewheel);
+  mouse.element.removeEventListener('DOMMouseScroll', mouse.mousewheel);
+
+  const mouseConstraint = MouseConstraint.create(engine, {
+    mouse: mouse,
+    constraint: {
+      stiffness: 0.18,
+      render: { visible: false }
+    }
+  });
+  Composite.add(engine.world, mouseConstraint);
+  render.mouse = mouse;
+
+  // ===== Custom card rendering (drawn after physics each frame) =====
+  Events.on(render, 'afterRender', () => {
+    const ctx = render.context;
+    ctx.save();
+    bodies.forEach(b => {
+      const c = b.cardData;
+      ctx.save();
+      ctx.translate(b.position.x, b.position.y);
+      ctx.rotate(b.angle);
+
+      // Style by type
+      let fill, stroke, text, font, accent = false;
+      if (c.type === 'highlight') {
+        fill = '#c6ff00';
+        stroke = '#c6ff00';
+        text = '#0a0a0a';
+        font = 'bold 13px JetBrains Mono, monospace';
+      } else if (c.type === 'project') {
+        fill = '#141414';
+        stroke = '#c6ff00';
+        text = '#c6ff00';
+        font = 'bold 14px JetBrains Mono, monospace';
+        accent = true;
+      } else if (c.type === 'stat') {
+        fill = '#141414';
+        stroke = 'rgba(255,255,255,0.35)';
+        text = '#f5f5f0';
+        font = '11px JetBrains Mono, monospace';
+      } else {
+        fill = '#1a1a1a';
+        stroke = 'rgba(255,255,255,0.18)';
+        text = '#f5f5f0';
+        font = '500 13px JetBrains Mono, monospace';
+      }
+
+      // Card shape
+      const w = c.w, h = c.h, r = 4;
+      ctx.beginPath();
+      ctx.moveTo(-w/2 + r, -h/2);
+      ctx.lineTo(w/2 - r, -h/2);
+      ctx.quadraticCurveTo(w/2, -h/2, w/2, -h/2 + r);
+      ctx.lineTo(w/2, h/2 - r);
+      ctx.quadraticCurveTo(w/2, h/2, w/2 - r, h/2);
+      ctx.lineTo(-w/2 + r, h/2);
+      ctx.quadraticCurveTo(-w/2, h/2, -w/2, h/2 - r);
+      ctx.lineTo(-w/2, -h/2 + r);
+      ctx.quadraticCurveTo(-w/2, -h/2, -w/2 + r, -h/2);
+      ctx.closePath();
+
+      ctx.fillStyle = fill;
+      ctx.fill();
+
+      // Subtle inner glow for project cards
+      if (accent) {
+        ctx.shadowColor = '#c6ff00';
+        ctx.shadowBlur = 12;
+      }
+      ctx.lineWidth = accent ? 1.5 : 1;
+      ctx.strokeStyle = stroke;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+
+      // Label
+      ctx.fillStyle = text;
+      ctx.font = font;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(c.label, 0, 1);
+
+      ctx.restore();
+    });
+    ctx.restore();
+  });
+
+  // ===== Run engine + renderer =====
+  const runner = Runner.create();
+  Runner.run(runner, engine);
+  Render.run(render);
+
+  // ===== Reset button =====
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    bodies.forEach((b, i) => {
+      const c = b.cardData;
+      const x = 100 + (i * 90) % (width - 200);
+      Body.setPosition(b, { x: x, y: 40 });
+      Body.setVelocity(b, { x: (Math.random()-0.5)*4, y: 0 });
+      Body.setAngle(b, 0);
+      Body.setAngularVelocity(b, 0);
+    });
+  });
+
+  // ===== Resize handling =====
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      width = heroEl.clientWidth;
+      height = heroEl.clientHeight;
+      render.canvas.width = width * (window.devicePixelRatio || 1);
+      render.canvas.height = height * (window.devicePixelRatio || 1);
+      render.canvas.style.width = width + 'px';
+      render.canvas.style.height = height + 'px';
+      render.options.width = width;
+      render.options.height = height;
+      Render.setPixelRatio(render, window.devicePixelRatio || 1);
+
+      // Reposition walls
+      Composite.remove(engine.world, walls);
+      walls = [
+        Bodies.rectangle(width/2, height + wallThickness/2, width*2, wallThickness, wallOpts),
+        Bodies.rectangle(-wallThickness/2, height/2, wallThickness, height*2, wallOpts),
+        Bodies.rectangle(width + wallThickness/2, height/2, wallThickness, height*2, wallOpts),
+        Bodies.rectangle(width/2, -wallThickness/2, width*2, wallThickness, wallOpts)
+      ];
+      Composite.add(engine.world, walls);
+    }, 150);
+  });
+
+  // ===== Smooth scroll for nav links =====
+  document.querySelectorAll('.topbar-right a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+
+</body>
 </html>
